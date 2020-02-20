@@ -1,0 +1,13 @@
+apiVersion: sources.eventing.knative.dev/v1alpha1
+kind: KafkaSource
+metadata:
+  name: kafka-source
+spec:
+  consumerGroup: knative-group
+  bootstrapServers: my-kafka:9092 #note the kafka namespace
+  topics: knative-topic
+  sink:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: knative-hello-world-v4

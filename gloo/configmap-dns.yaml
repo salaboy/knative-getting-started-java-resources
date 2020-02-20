@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-domain
+  namespace: knative-serving
+data:
+  # xip.io is a "magic" DNS provider, which resolves all DNS lookups for:
+  # *.{ip}.xip.io to {ip}.
+  <EXTERNAL_IP>.xip.io: ""
+
