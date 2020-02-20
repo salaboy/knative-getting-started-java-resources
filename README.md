@@ -4,6 +4,7 @@ Repository with Links and Resources for: http://salaboy.com/2020/02/20/getting-s
 # Gloo
 
 [gloo/values.yaml](gloo/values.yaml) file for Helm Chart
+
 [gloo/configmap-dns.yaml](gloo/configmap-dns.yaml) example file to configure XIP.io for DNS
 
 
